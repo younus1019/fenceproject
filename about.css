@@ -614,8 +614,8 @@ html[dir="rtl"] .about-hero__secondary svg {
   max-width: 610px;
   margin: 0;
   color: var(--text);
-  font-size: clamp(44px, 4.7vw, 64px);
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 500;
   line-height: 1.03;
   letter-spacing: -3.4px;
 }
@@ -1077,8 +1077,8 @@ html[dir="rtl"] .about-story__link svg {
   max-width: 540px;
   margin: 0;
   color: var(--text);
-  font-size: clamp(44px, 4.8vw, 65px);
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 500;
   line-height: 1.03;
   letter-spacing: -3.4px;
 }
@@ -1544,8 +1544,8 @@ html[dir="rtl"] .about-value::before {
   max-width: 700px;
   margin: 0;
   color: var(--text);
-  font-size: clamp(44px, 4.8vw, 65px);
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 500;
   line-height: 1.03;
   letter-spacing: -3.4px;
 }
@@ -2195,8 +2195,8 @@ html[dir="rtl"] .craft-step::before {
   max-width: 720px;
   margin: 0;
   color: var(--text);
-  font-size: clamp(46px, 5vw, 68px);
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 500;
   line-height: 1.02;
   letter-spacing: -3.6px;
   transition: color var(--transition);

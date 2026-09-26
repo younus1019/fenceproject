@@ -532,8 +532,8 @@ html[dir="rtl"] .gallery-hero__button svg {
   max-width: 760px;
   margin: 0;
   color: var(--text);
-  font-size: clamp(44px, 4.8vw, 66px);
-  font-weight: 800;
+  font-size: 3.5rem;
+  font-weight: 500;
   line-height: 1.03;
   letter-spacing: -3.4px;
 }
@@ -1207,8 +1207,8 @@ html[dir="rtl"] .gallery-lightbox__close {
   max-width: 800px;
   margin: 0;
   color: var(--text);
-  font-size: clamp(44px, 4.8vw, 66px);
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 500;
   line-height: 1.03;
   letter-spacing: -3.4px;
 }
@@ -1886,8 +1886,8 @@ html[dir="rtl"] .featured-project__button svg {
   max-width: 760px;
   margin: 0;
   color: var(--text);
-  font-size: clamp(44px, 4.8vw, 66px);
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 500;
   line-height: 1.03;
   letter-spacing: -3.4px;
 }
@@ -2370,8 +2370,8 @@ html[dir="rtl"] .gallery-details__link:hover svg {
 .gallery-cta__title {
   margin: 0;
   color: var(--text);
-  font-size: clamp(48px, 5.2vw, 72px);
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 500;
   line-height: 1.01;
   letter-spacing: -4px;
 }

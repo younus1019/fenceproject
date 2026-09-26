@@ -180,35 +180,17 @@ button {
   color: var(--secondary);
 }
 
-.privacy-brand__tagline {
+ .privacy-brand__tagline {
   position: relative;
   width: fit-content;
   margin-top: 8px;
-  padding: 0 25px;
+  padding: 0 ;
   color: var(--text-muted);
   font-size: var(--text-xs);
   font-weight: 700;
   line-height: 1;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-}
-
-.privacy-brand__tagline::before,
-.privacy-brand__tagline::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 17px;
-  height: 1px;
-  background: var(--secondary);
-}
-
-.privacy-brand__tagline::before {
-  left: 0;
-}
-
-.privacy-brand__tagline::after {
-  right: 0;
 }
 
 .privacy-divider {
@@ -248,8 +230,8 @@ button {
 .privacy-title {
   margin: 0;
   color: var(--text);
-  font-size: 42px;
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 500;
   line-height: 1.05;
   letter-spacing: -2.2px;
   text-transform: uppercase;

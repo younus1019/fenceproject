@@ -800,8 +800,8 @@ html[dir="rtl"] .trust-stat:not(:last-child)::after {
 
   color: var(--text);
 
-  font-size: clamp(38px, 4vw, 56px);
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 500;
   line-height: 1.08;
   letter-spacing: -2.2px;
 }
@@ -1403,8 +1403,8 @@ html[dir="rtl"] .fence-types__all:hover svg {
 
   color: var(--text);
 
-  font-size: clamp(40px, 4vw, 58px);
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 500;
   line-height: 1.07;
   letter-spacing: -2.3px;
 }
@@ -1988,8 +1988,8 @@ html[dir="rtl"] .home-about__button:hover svg {
 
   color: var(--text);
 
-  font-size: clamp(40px, 4vw, 56px);
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 500;
   line-height: 1.08;
   letter-spacing: -2.2px;
 }
@@ -2762,8 +2762,8 @@ html[dir="rtl"] .service-row__arrow svg {
   max-width: 480px;
   margin: 0;
   color: var(--text);
-  font-size: clamp(42px, 4.4vw, 62px);
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 500;
   line-height: 1.05;
   letter-spacing: -2.5px;
 }
@@ -3353,8 +3353,8 @@ html[dir="rtl"] body.dark-mode .why-feature {
 .work-process__header h2 {
   margin: 0;
   color: var(--text);
-  font-size: clamp(40px, 4vw, 56px);
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 500;
   line-height: 1.08;
   letter-spacing: -2.2px;
 }
@@ -4118,7 +4118,7 @@ html[dir="rtl"] .work-process__button:hover svg {
   max-width: 720px;
   margin: 0 auto;
   color: var(--text);
-  font-size: clamp(30px, 3vw, 42px);
+  font-size:2.5rem;
   font-weight: 500;
   line-height: 1.16;
   letter-spacing: -1.8px;

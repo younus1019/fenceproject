@@ -54,9 +54,9 @@ document.addEventListener("DOMContentLoaded", () => {
         : '<i data-lucide="moon"></i>';
     }
 
-   if (rtlToggle) {
-     rtlToggle.innerHTML = '<i data-lucide="arrow-left-right"></i>';
-   }
+    if (rtlToggle) {
+      rtlToggle.innerHTML = '<i data-lucide="arrow-left-right"></i>';
+    }
 
     if (menuToggle && navbar) {
       const isOpen = navbar.classList.contains("active");
