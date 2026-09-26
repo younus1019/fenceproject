@@ -82,8 +82,8 @@
 
   color: #ffffff;
 
-  font-size: clamp(48px, 5.2vw, 76px);
-  font-weight: 800;
+  font-size: 3.5rem;
+  font-weight: 600;
   line-height: 1.04;
   letter-spacing: -3px;
 }

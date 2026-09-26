@@ -1,71 +1,55 @@
 .pricing-hero {
   position: relative;
-  min-height: 760px;
-  overflow: hidden;
+  min-height: calc(100vh - var(--header-height));
   display: flex;
   align-items: center;
-  background: var(--primary);
-}
-
-.pricing-hero__media {
-  position: absolute;
-  inset: 0;
-}
-
-.pricing-hero__media img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
+  justify-content: center;
+  overflow: hidden;
+  background:
+    url("images/fence\ 4.jfif")
+    center center / cover no-repeat;
 }
 
 .pricing-hero__overlay {
   position: absolute;
   inset: 0;
-  z-index: 1;
   background:
     linear-gradient(
       90deg,
-      rgba(10, 10, 10, 0.94) 0%,
-      rgba(10, 10, 10, 0.82) 42%,
-      rgba(10, 10, 10, 0.45) 70%,
-      rgba(10, 10, 10, 0.3) 100%
+      rgba(0, 0, 0, 0.78) 0%,
+      rgba(0, 0, 0, 0.62) 45%,
+      rgba(0, 0, 0, 0.58) 100%
     );
-}
-
-.pricing-hero__container {
-  position: relative;
-  z-index: 3;
-  width: min(100% - 48px, var(--container-width));
-  margin: 0 auto;
-  padding: 120px 0 145px;
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  align-items: center;
-  gap: 100px;
+  z-index: 1;
 }
 
 .pricing-hero__content {
-  max-width: 700px;
+  position: relative;
+  z-index: 3;
+  width: min(100% - 48px, 1000px);
+  margin: 0 auto;
+  padding: 90px 0 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pricing-hero__breadcrumb {
-  margin-bottom: 24px;
   display: flex;
   align-items: center;
-  gap: 8px;
-}
-
-.pricing-hero__breadcrumb a,
-.pricing-hero__breadcrumb span {
-  color: rgba(255, 255, 255, 0.62);
-  font-size: var(--text-xs);
+  justify-content: center;
+  gap: 9px;
+  margin-bottom: 28px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: var(--text-sm);
   font-weight: 600;
-  line-height: 1;
-  text-decoration: none;
+  letter-spacing: 0.6px;
 }
 
 .pricing-hero__breadcrumb a {
+  color: rgba(255, 255, 255, 0.78);
+  text-decoration: none;
   transition: color var(--transition);
 }
 
@@ -74,13 +58,17 @@
 }
 
 .pricing-hero__breadcrumb svg {
-  width: 10px;
-  height: 10px;
-  color: rgba(255, 255, 255, 0.35);
+  width: 14px;
+  height: 14px;
+  color: var(--secondary);
 }
 
-.pricing-hero__content .section-tag {
+.pricing-hero__breadcrumb span {
   color: var(--secondary);
+}
+
+.pricing-hero .section-tag {
+margin-bottom: 24px;
 }
 
 .section-tag{
@@ -114,14 +102,16 @@
   stroke-width: 2.2;
 }
 
+
+
 .pricing-hero__title {
-  max-width: 720px;
+  max-width: 920px;
   margin: 0;
   color: var(--white);
-  font-size: clamp(50px, 5.5vw, 76px);
-  font-weight: 800;
-  line-height: 0.99;
-  letter-spacing: -4.5px;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.04;
+  letter-spacing: -2.4px;
 }
 
 .pricing-hero__title span {
@@ -129,538 +119,189 @@
   color: var(--secondary);
 }
 
-.pricing-hero__text {
-  max-width: 580px;
-  margin: 24px 0 0;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: var(--text-base);
+.pricing-hero__description {
+  max-width: 720px;
+  margin: 28px auto 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: var(--text-md);
   font-weight: 400;
-  line-height: 1.85;
+  line-height: 1.8;
 }
 
 .pricing-hero__actions {
-  margin-top: 31px;
+  margin-top: 34px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
-  flex-wrap: wrap;
 }
 
-.pricing-hero__button {
-  min-height: 49px;
-  padding: 0 19px;
+.pricing-hero__btn {
+  min-height: 50px;
+  padding: 0 22px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 9px;
+  gap: 10px;
   border-radius: var(--radius-sm);
-  font-family: var(--font-family);
-  font-size: var(--text-xs);
+  font-size: var(--text-base);
   font-weight: 700;
-  line-height: 1;
   text-decoration: none;
-  white-space: nowrap;
   transition:
-    color var(--transition),
     background var(--transition),
+    color var(--transition),
     border-color var(--transition),
     transform var(--transition);
 }
 
-.pricing-hero__button svg {
-  width: 13px;
-  height: 13px;
-  stroke-width: 1.8;
+.pricing-hero__btn svg {
+  width: 16px;
+  height: 16px;
 }
 
-.pricing-hero__button:hover {
+.pricing-hero__btn:hover {
   transform: translateY(-2px);
 }
 
-.pricing-hero__button--primary {
+.pricing-hero__btn--primary {
   color: var(--white);
   background: var(--secondary);
   border: 1px solid var(--secondary);
 }
 
-.pricing-hero__button--primary:hover {
+.pricing-hero__btn--primary:hover {
   background: var(--secondary-hover);
   border-color: var(--secondary-hover);
 }
 
-.pricing-hero__button--secondary {
+.pricing-hero__btn--secondary {
   color: var(--white);
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
 }
 
-.pricing-hero__button--secondary:hover {
-  background: rgba(255, 255, 255, 0.13);
-  border-color: rgba(255, 255, 255, 0.4);
+.pricing-hero__btn--secondary:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.55);
 }
 
-.pricing-hero__guide {
-  position: relative;
-  max-width: 440px;
-  margin-left: auto;
-  padding: 34px;
-  color: var(--text);
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
-}
-
-.pricing-hero__guide-top {
-  margin-bottom: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.pricing-hero__guide-top > span {
-  color: var(--secondary);
-  font-size: var(--text-xs);
-  font-weight: 700;
-  letter-spacing: 0.7px;
-  text-transform: uppercase;
-}
-
-.pricing-hero__guide-top > div {
-  width: 38px;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--secondary);
-  background: color-mix(
-    in srgb,
-    var(--secondary) 10%,
-    transparent
-  );
-  border: 1px solid color-mix(
-    in srgb,
-    var(--secondary) 24%,
-    transparent
-  );
-  border-radius: 50%;
-}
-
-.pricing-hero__guide-top svg {
-  width: 15px;
-  height: 15px;
-}
-
-.pricing-hero__guide h2 {
-  margin: 0;
-  color: var(--text);
-  font-size: 28px;
-  font-weight: 800;
-  line-height: 1.08;
-  letter-spacing: -1.4px;
-}
-
-.pricing-hero__guide h2 span {
-  display: block;
-  color: var(--secondary);
-}
-
-.pricing-hero__guide > p {
-  margin: 14px 0 0;
-  color: var(--text-muted);
-  font-size: var(--text-sm);
-  font-weight: 400;
-  line-height: 1.7;
-}
-
-.pricing-hero__steps {
-  margin-top: 25px;
-  border-top: 1px solid var(--border);
-}
-
-.pricing-hero__step {
-  min-height: 64px;
-  display: grid;
-  grid-template-columns: 31px 1fr;
-  align-items: center;
-  gap: 13px;
-  border-bottom: 1px solid var(--border);
-}
-
-.pricing-hero__step > span {
-  color: var(--secondary);
-  font-size: var(--text-xs);
-  font-weight: 700;
-}
-
-.pricing-hero__step > div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 15px;
-}
-
-.pricing-hero__step strong {
-  color: var(--text);
-  font-size: var(--text-sm);
-  font-weight: 700;
-}
-
-.pricing-hero__step small {
-  color: var(--text-muted);
-  font-size: var(--text-xs);
-  font-weight: 500;
-}
-
-.pricing-hero__guide-footer {
-  margin-top: 21px;
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  color: var(--text-muted);
-}
-
-.pricing-hero__guide-footer svg {
-  width: 14px;
-  height: 14px;
-  flex-shrink: 0;
-  color: var(--secondary);
-}
-
-.pricing-hero__guide-footer span {
-  font-size: var(--text-xs);
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-.pricing-hero__bottom {
+.pricing-hero__word {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 4;
-  min-height: 100px;
-  padding: 0 max(24px, calc((100% - var(--container-width)) / 2));
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  background: rgba(10, 10, 10, 0.78);
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(15px);
+  left: 50%;
+  bottom: -28px;
+  z-index: 2;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.055);
+  font-size: clamp(100px, 16vw, 230px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -8px;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
 }
-
-.pricing-hero__bottom > div {
-  padding: 22px 24px;
-  display: flex;
-  align-items: center;
-  gap: 13px;
-  border-right: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.pricing-hero__bottom > div:last-child {
-  border-right: none;
-}
-
-.pricing-hero__bottom svg {
-  width: 18px;
-  height: 18px;
-  flex-shrink: 0;
-  color: var(--secondary);
-  stroke-width: 1.7;
-}
-
-.pricing-hero__bottom span {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  color: rgba(255, 255, 255, 0.55);
-  font-size: var(--text-xs);
-  line-height: 1.3;
-}
-
-.pricing-hero__bottom strong {
-  color: var(--white);
-  font-size: var(--text-sm);
-  font-weight: 700;
-}
-
-html[dir="rtl"] .pricing-hero__breadcrumb svg,
-html[dir="rtl"] .pricing-hero__button svg {
-  transform: scaleX(-1);
-}
-
-html[dir="rtl"] .pricing-hero__guide {
-  margin-right: auto;
-  margin-left: 0;
-}
-
-html[dir="rtl"] .pricing-hero__bottom > div {
-  border-right: none;
-  border-left: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-html[dir="rtl"] .pricing-hero__bottom > div:last-child {
-  border-left: none;
-}
-
 @media screen and (min-width: 360px) and (max-width: 740px) {
   .pricing-hero {
-    min-height: auto;
-  }
-
-  .pricing-hero__overlay {
-    background: rgba(10, 10, 10, 0.82);
-  }
-
-  .pricing-hero__container {
-    width: calc(100% - 32px);
-    padding: 105px 0 35px;
-    grid-template-columns: 1fr;
-    gap: 38px;
+    min-height: calc(100vh - var(--header-height));
   }
 
   .pricing-hero__content {
-    max-width: 100%;
-    text-align: center;
+    width: min(100% - 32px, 1000px);
+    padding: 70px 0 90px;
   }
 
   .pricing-hero__breadcrumb {
-    justify-content: center;
+    margin-bottom: 22px;
+    font-size: var(--text-xs);
+  }
+
+  .pricing-hero .section-tag {
     margin-bottom: 20px;
   }
 
-  .pricing-hero__content .section-tag {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .pricing-hero__title {
-    font-size: 40px;
-    line-height: 1.03;
-    letter-spacing: -2.4px;
+    font-size: 3.5rem;
+    line-height: 1.02;
+    letter-spacing: -2px;
   }
 
-  .pricing-hero__text {
-    max-width: 500px;
-    margin: 19px auto 0;
-    font-size: var(--text-sm);
-    line-height: 1.75;
+  .pricing-hero__description {
+    margin-top: 22px;
+    font-size: var(--text-base);
+    line-height: 1.7;
   }
 
   .pricing-hero__actions {
-    margin-top: 25px;
-    justify-content: center;
-    gap: 8px;
-  }
-
-  .pricing-hero__button {
-    min-height: 45px;
-    padding: 0 13px;
-    font-size: var(--text-xs);
-  }
-
-  .pricing-hero__guide {
     width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 26px 22px;
+    margin-top: 28px;
+    flex-direction: column;
   }
 
-  .pricing-hero__guide h2 {
-    font-size: 25px;
+  .pricing-hero__btn {
+    width: 100%;
   }
 
-  .pricing-hero__guide > p {
-    font-size: var(--text-xs);
-  }
-
-  .pricing-hero__step {
-    min-height: 59px;
-  }
-
-  .pricing-hero__bottom {
-    position: relative;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0 16px;
-  }
-
-  .pricing-hero__bottom > div {
-    min-height: 83px;
-    padding: 16px 10px;
-  }
-
-  .pricing-hero__bottom > div:nth-child(2) {
-    border-right: none;
-  }
-
-  .pricing-hero__bottom > div:nth-child(-n + 2) {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-  }
-
-  .pricing-hero__bottom svg {
-    width: 16px;
-    height: 16px;
-  }
-
-  .pricing-hero__bottom strong {
-    font-size: var(--text-xs);
-  }
-
-  .pricing-hero__bottom span {
-    font-size: var(--text-xs);
+  .pricing-hero__word {
+    bottom: -8px;
+    font-size: 25vw;
+    letter-spacing: -3px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 820px) {
-  .pricing-hero {
-    min-height: 690px;
-  }
-
-  .pricing-hero__container {
-    width: calc(100% - 40px);
-    padding: 105px 0 125px;
-    gap: 45px;
+  .pricing-hero__content {
+    width: min(100% - 48px, 900px);
+    padding: 80px 0 90px;
   }
 
   .pricing-hero__title {
-    font-size: 48px;
-    letter-spacing: -2.8px;
+    font-size: 3.5rem;
   }
 
-  .pricing-hero__text {
-    font-size: var(--text-sm);
-  }
-
-  .pricing-hero__guide {
-    padding: 27px;
-  }
-
-  .pricing-hero__guide h2 {
-    font-size: 23px;
-  }
-
-  .pricing-hero__bottom {
-    min-height: 90px;
-    padding: 0 20px;
-  }
-
-  .pricing-hero__bottom > div {
-    padding: 18px 11px;
-    gap: 9px;
-  }
-
-  .pricing-hero__bottom strong {
-    font-size: var(--text-xs);
-  }
-
-  .pricing-hero__bottom span {
-    font-size: var(--text-xs);
+  .pricing-hero__description {
+    max-width: 650px;
   }
 }
 
 @media screen and (min-width: 821px) and (max-width: 1024px) {
-  .pricing-hero {
-    min-height: 720px;
-  }
-
-  .pricing-hero__container {
-    width: calc(100% - 48px);
-    padding: 110px 0 130px;
-    gap: 55px;
+  .pricing-hero__content {
+    width: min(100% - 56px, 900px);
+    padding: 80px 0 90px;
   }
 
   .pricing-hero__title {
-    font-size: 55px;
-    letter-spacing: -3.2px;
+    font-size: 3.5rem;
   }
 
-  .pricing-hero__text {
-    font-size: var(--text-sm);
-  }
-
-  .pricing-hero__guide {
-    padding: 30px;
-  }
-
-  .pricing-hero__guide h2 {
-    font-size: 25px;
-  }
-
-  .pricing-hero__bottom > div {
-    padding: 20px 15px;
+  .pricing-hero__description {
+    max-width: 680px;
   }
 }
 
 @media screen and (width: 1024px) and (height: 600px) {
-  .pricing-hero {
-    min-height: 600px;
-  }
-
-  .pricing-hero__container {
-    width: calc(100% - 48px);
-    padding: 90px 0 105px;
-    gap: 55px;
+  .pricing-hero__content {
+    padding: 55px 0 70px;
   }
 
   .pricing-hero__breadcrumb {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
+  }
+
+  .pricing-hero .section-tag {
+    margin-bottom: 18px;
   }
 
   .pricing-hero__title {
-    font-size: 47px;
-    letter-spacing: -2.8px;
+    font-size: 3.5rem;
   }
 
-  .pricing-hero__text {
-    margin-top: 16px;
-    font-size: var(--text-sm);
+  .pricing-hero__description {
+    margin-top: 18px;
   }
 
   .pricing-hero__actions {
-    margin-top: 20px;
-  }
-
-  .pricing-hero__button {
-    min-height: 41px;
-    font-size: var(--text-xs);
-  }
-
-  .pricing-hero__guide {
-    padding: 23px;
-  }
-
-  .pricing-hero__guide-top {
-    margin-bottom: 16px;
-  }
-
-  .pricing-hero__guide h2 {
-    font-size: 22px;
-  }
-
-  .pricing-hero__guide > p {
-    margin-top: 10px;
-    font-size: var(--text-xs);
-  }
-
-  .pricing-hero__steps {
-    margin-top: 16px;
-  }
-
-  .pricing-hero__step {
-    min-height: 48px;
-  }
-
-  .pricing-hero__guide-footer {
-    margin-top: 14px;
-  }
-
-  .pricing-hero__bottom {
-    min-height: 78px;
-  }
-
-  .pricing-hero__bottom > div {
-    padding: 14px 16px;
+    margin-top: 24px;
   }
 }
 

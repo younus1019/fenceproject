@@ -121,8 +121,8 @@
   max-width: 850px;
   margin: 0;
   color: var(--white);
-  font-size: clamp(55px, 6.4vw, 88px);
-  font-weight: 800;
+  font-size: 3.5rem;
+  font-weight: 600;
   line-height: 0.97;
   letter-spacing: -5px;
 }
