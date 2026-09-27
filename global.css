@@ -365,7 +365,7 @@ img {
   color: var(--text);
   background: var(--surface);
 
-  border: 1px solid var(--border);
+  border: 1px solid var(--secondary);
   border-radius: var(--radius-sm);
 
   cursor: pointer;
@@ -1735,4 +1735,6 @@ html[dir="rtl"] .footer-contact li a:hover {
     min-height: 58px;
   }
 }
+
+
 

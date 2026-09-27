@@ -17,13 +17,13 @@
   color: var(--secondary);
 
   background: rgba(255, 255, 255, 0.09);
-  border: 1px solid rgba(12, 12, 12, 0.18);
+  border: 1px solid var(--secondary);
   border-radius: 100px;
 
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.2px;
 }
