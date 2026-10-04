@@ -13,7 +13,7 @@
 
     <link rel="icon" type="image/png" href="images/logo img.png" />
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="global.css" />
   </head>
 
   <body>
@@ -86,14 +86,14 @@
 
         <div class="nav-actions">
           <button
-  class="nav-icon-btn"
-  id="rtlToggle"
-  type="button"
-  aria-label="Toggle RTL"
-  title="Toggle RTL"
->
-  <i data-lucide="arrow-left-right"></i>
-</button>
+            class="nav-icon-btn"
+            id="rtlToggle"
+            type="button"
+            aria-label="Toggle RTL"
+            title="Toggle RTL"
+          >
+            <i data-lucide="arrow-left-right"></i>
+          </button>
 
           <button
             class="nav-icon-btn"
@@ -425,7 +425,6 @@
         </div>
       </div>
     </section>
-
     <section class="home-services">
       <div class="home-services__container">
         <div class="home-services__header">
@@ -448,24 +447,27 @@
           </p>
         </div>
 
-        <div class="home-services__layout">
-          <a href="contact.html#measurement" class="service-featured">
-            <img
-              src="images/installation img.png"
-              alt="Professional fence installation"
-              loading="lazy"
-            />
+        <div class="home-services__grid">
+          <!-- 01 -->
+          <a href="contact.html#measurement" class="service-card">
+            <div class="service-card__image">
+              <img
+                src="images/installation img.png"
+                alt="Professional fence installation"
+                loading="lazy"
+              />
 
-            <div class="service-featured__overlay"></div>
+              <div class="service-card__image-overlay"></div>
 
-            <div class="service-featured__number">01</div>
+              <span class="service-card__number">01</span>
 
-            <div class="service-featured__content">
-              <div class="service-featured__icon">
+              <div class="service-card__icon">
                 <i data-lucide="hammer"></i>
               </div>
+            </div>
 
-              <span>Complete Installation</span>
+            <div class="service-card__content">
+              <span class="service-card__eyebrow">Complete Installation</span>
 
               <h3>Fence Installation</h3>
 
@@ -474,103 +476,194 @@
                 preferred material, privacy needs, and finished appearance.
               </p>
 
-              <div class="service-featured__link">
+              <span class="service-card__link">
                 Get Free Measurement
                 <i data-lucide="arrow-up-right"></i>
-              </div>
+              </span>
             </div>
           </a>
 
-          <div class="services-list">
-            <a href="contact.html" class="service-row">
-              <div class="service-row__number">02</div>
+          <!-- 02 -->
+          <a href="contact.html" class="service-card">
+            <div class="service-card__image">
+              <img
+                src="images/fence repair img.png"
+                alt="Fence repair service"
+                loading="lazy"
+              />
 
-              <div class="service-row__icon">
+              <div class="service-card__image-overlay"></div>
+
+              <span class="service-card__number">02</span>
+
+              <div class="service-card__icon">
                 <i data-lucide="wrench"></i>
               </div>
+            </div>
 
-              <div class="service-row__content">
-                <h3>Fence Repair</h3>
-                <p>Restore damaged, leaning, broken, or weathered fencing.</p>
-              </div>
+            <div class="service-card__content">
+              <span class="service-card__eyebrow">Restore & Repair</span>
 
-              <div class="service-row__arrow">
+              <h3>Fence Repair</h3>
+
+              <p>
+                Restore damaged, leaning, broken, or weathered fencing and bring
+                your property's boundary back into shape.
+              </p>
+
+              <span class="service-card__link">
+                Request Repair
                 <i data-lucide="arrow-up-right"></i>
-              </div>
-            </a>
+              </span>
+            </div>
+          </a>
 
-            <a href="contact.html" class="service-row">
-              <div class="service-row__number">03</div>
+          <!-- 03 -->
+          <a href="contact.html" class="service-card">
+            <div class="service-card__image">
+              <img
+                src="images/fence replacement.png"
+                alt="Fence replacement service"
+                loading="lazy"
+              />
 
-              <div class="service-row__icon">
+              <div class="service-card__image-overlay"></div>
+
+              <span class="service-card__number">03</span>
+
+              <div class="service-card__icon">
                 <i data-lucide="refresh-cw"></i>
               </div>
+            </div>
 
-              <div class="service-row__content">
-                <h3>Fence Replacement</h3>
-                <p>Replace aging fencing with a stronger, cleaner solution.</p>
-              </div>
+            <div class="service-card__content">
+              <span class="service-card__eyebrow">Upgrade Your Boundary</span>
 
-              <div class="service-row__arrow">
+              <h3>Fence Replacement</h3>
+
+              <p>
+                Replace aging fencing with a stronger, cleaner solution designed
+                for long-term property performance.
+              </p>
+
+              <span class="service-card__link">
+                Plan A Replacement
                 <i data-lucide="arrow-up-right"></i>
-              </div>
-            </a>
+              </span>
+            </div>
+          </a>
 
-            <a href="contact.html" class="service-row">
-              <div class="service-row__number">04</div>
+          <!-- 04 -->
+          <a href="contact.html" class="service-card">
+            <div class="service-card__image">
+              <img
+                src="images/gate installation.png"
+                alt="Gate installation service"
+                loading="lazy"
+              />
 
-              <div class="service-row__icon">
+              <div class="service-card__image-overlay"></div>
+
+              <span class="service-card__number">04</span>
+
+              <div class="service-card__icon">
                 <i data-lucide="door-open"></i>
               </div>
+            </div>
 
-              <div class="service-row__content">
-                <h3>Gate Installation</h3>
-                <p>Functional entry gates designed to complement your fence.</p>
-              </div>
+            <div class="service-card__content">
+              <span class="service-card__eyebrow">Secure Entry</span>
 
-              <div class="service-row__arrow">
+              <h3>Gate Installation</h3>
+
+              <p>
+                Functional entry gates designed to complement your fence while
+                providing practical access and security.
+              </p>
+
+              <span class="service-card__link">
+                Explore Gate Options
                 <i data-lucide="arrow-up-right"></i>
-              </div>
-            </a>
+              </span>
+            </div>
+          </a>
 
-            <a href="contact.html#measurement" class="service-row">
-              <div class="service-row__number">05</div>
+          <!-- 05 -->
+          <a href="contact.html#measurement" class="service-card">
+            <div class="service-card__image">
+              <img
+                src="images/measuring fence.png"
+                alt="Property measurement for fencing"
+                loading="lazy"
+              />
 
-              <div class="service-row__icon">
+              <div class="service-card__image-overlay"></div>
+
+              <span class="service-card__number">05</span>
+
+              <div class="service-card__icon">
                 <i data-lucide="ruler"></i>
               </div>
+            </div>
 
-              <div class="service-row__content">
-                <h3>Property Measurement</h3>
-                <p>
-                  Accurate measurements to plan your fencing project properly.
-                </p>
-              </div>
+            <div class="service-card__content">
+              <span class="service-card__eyebrow">Plan With Precision</span>
 
-              <div class="service-row__arrow">
+              <h3>Property Measurement</h3>
+
+              <p>
+                Accurate measurements to understand your property's layout and
+                plan your fencing project properly.
+              </p>
+
+              <span class="service-card__link">
+                Book Measurement
                 <i data-lucide="arrow-up-right"></i>
-              </div>
-            </a>
+              </span>
+            </div>
+          </a>
 
-            <a href="contact.html" class="service-row">
-              <div class="service-row__number">06</div>
+          <!-- 06 -->
+          <a href="contact.html" class="service-card">
+            <div class="service-card__image">
+              <img
+                src="images/custom fence.png"
+                alt="Custom fence solution"
+                loading="lazy"
+              />
 
-              <div class="service-row__icon">
+              <div class="service-card__image-overlay"></div>
+
+              <span class="service-card__number">06</span>
+
+              <div class="service-card__icon">
                 <i data-lucide="pencil-ruler"></i>
               </div>
+            </div>
 
-              <div class="service-row__content">
-                <h3>Custom Fence Solutions</h3>
-                <p>
-                  Tailored fencing layouts for unique property requirements.
-                </p>
-              </div>
+            <div class="service-card__content">
+              <span class="service-card__eyebrow">Built Around Your Space</span>
 
-              <div class="service-row__arrow">
+              <h3>Custom Fence Solutions</h3>
+
+              <p>
+                Tailored fencing layouts for unique property requirements,
+                practical needs, and finished appearance.
+              </p>
+
+              <span class="service-card__link">
+                Discuss Your Project
                 <i data-lucide="arrow-up-right"></i>
-              </div>
-            </a>
-          </div>
+              </span>
+            </div>
+          </a>
+        </div>
+
+        <div class="home-services__bottom">
+          <a href="contact.html#measurement" class="home-services__cta">
+            Get Your Free Measurement
+            <i data-lucide="arrow-up-right"></i>
+          </a>
         </div>
       </div>
     </section>
@@ -1064,6 +1157,5 @@
 
     <script src="https://unpkg.com/lucide@0.542.0/dist/umd/lucide.min.js"></script>
     <script src="global.js"></script>
-
   </body>
 </html>

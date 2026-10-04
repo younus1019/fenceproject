@@ -85,15 +85,15 @@
         </nav>
 
         <div class="nav-actions">
-         <button
-  class="nav-icon-btn"
-  id="rtlToggle"
-  type="button"
-  aria-label="Toggle RTL"
-  title="Toggle RTL"
->
-  <i data-lucide="arrow-left-right"></i>
-</button>
+          <button
+            class="nav-icon-btn"
+            id="rtlToggle"
+            type="button"
+            aria-label="Toggle RTL"
+            title="Toggle RTL"
+          >
+            <i data-lucide="arrow-left-right"></i>
+          </button>
 
           <button
             class="nav-icon-btn"
@@ -196,114 +196,186 @@
         <span>Security</span>
       </div>
     </section>
-
     <section class="craft-statement">
       <div class="craft-statement__container">
-        <div class="craft-statement__top">
+        <!-- =====================================================
+         CENTERED SECTION HEADING
+         ===================================================== -->
+
+        <div class="craft-statement__heading">
           <div class="section-tag">
             <i data-lucide="hammer"></i>
             <span>Our Craftsmanship</span>
           </div>
 
-          <!-- <span class="craft-statement__index">
-            01 / THE FENCEFORGE STANDARD
-          </span> -->
+          <h2>
+            Built With
+            <span>Purpose & Precision.</span>
+          </h2>
+
+          <p>
+            From accurate planning to carefully selected materials and
+            dependable finishing, every FenceForge project is built around
+            quality that lasts.
+          </p>
         </div>
 
-        <div class="craft-statement__main">
-          <div class="craft-statement__heading">
-            <h2>
-              More Than a Fence.
-              <span>A Defining Detail.</span>
-            </h2>
-          </div>
+        <!-- =====================================================
+         CRAFTSMANSHIP CARD GRID
+         ===================================================== -->
 
-          <div class="craft-statement__content">
-            <p class="craft-statement__lead">
-              Every FenceForge project is shaped around the property, balancing
-              strong construction with thoughtful design and a finish that feels
-              naturally connected to the space.
-            </p>
+        <div class="craft-statement__grid">
+          <!-- =================================================
+           LEFT FEATURED CARD
+           ================================================= -->
 
-            <!-- <p class="craft-statement__text">
-              From material selection and accurate measurements to installation
-              and finishing, we focus on the details that create fencing with
-              lasting strength, privacy, and architectural character.
-            </p> -->
+          <article class="craft-featured-card">
+            <div class="craft-featured-card__image">
+              <img
+                src="images/Craftsman Installing.png"
+                alt="FenceForge craftsmanship and detailed fence construction"
+                loading="lazy"
+              />
 
-            <a href="about.html" class="craft-statement__link">
-              Discover Our Approach
-              <span>
-                <i data-lucide="arrow-up-right"></i>
+              <div class="craft-featured-card__overlay"></div>
+
+              <span class="craft-featured-card__number"> OUR CRAFT </span>
+            </div>
+
+            <div class="craft-featured-card__content">
+              <div class="section-tag">
+                <i data-lucide="hammer"></i>
+                <span>Our Craftsmanship</span>
+              </div>
+
+              <h2>
+                More Than a Fence.
+                <span>A Defining Detail.</span>
+              </h2>
+
+              <p>
+                Every FenceForge project is shaped around the property,
+                balancing strong construction with thoughtful design and a
+                finish that feels naturally connected to the space.
+              </p>
+
+              <a href="about.html" class="craft-featured-card__link">
+                Discover Our Approach
+
+                <span>
+                  <i data-lucide="arrow-up-right"></i>
+                </span>
+              </a>
+            </div>
+          </article>
+
+          <!-- =================================================
+           RIGHT CARD 01 — PRECISION
+           ================================================= -->
+
+          <article class="craft-principle-card">
+            <div class="craft-principle-card__image">
+              <img
+                src="images/Professional Fence Measurement.png"
+                alt="Precision property measurement for fence installation"
+                loading="lazy"
+              />
+
+              <div class="craft-principle-card__overlay"></div>
+
+              <span class="craft-principle-card__number"> 01 </span>
+
+              <div class="craft-principle-card__icon">
+                <i data-lucide="ruler"></i>
+              </div>
+            </div>
+
+            <div class="craft-principle-card__content">
+              <span class="craft-principle-card__eyebrow">
+                Planned With Precision
               </span>
-            </a>
-          </div>
-        </div>
 
-        <div class="craft-statement__principles">
-          <div class="craft-principle">
-            <span class="craft-principle__number">01</span>
+              <h3>Precision</h3>
 
-            <div class="craft-principle__line"></div>
+              <p>
+                Measured and planned around your property for an accurate,
+                clean, and dependable installation.
+              </p>
+            </div>
+          </article>
 
-            <div class="craft-principle__bottom">
-              <i data-lucide="ruler"></i>
+          <!-- =================================================
+           RIGHT CARD 02 — MATERIALS
+           ================================================= -->
 
-              <div>
-                <h3>Precision</h3>
-                <p>Measured and planned around your property.</p>
+          <article class="craft-principle-card">
+            <div class="craft-principle-card__image">
+              <img
+                src="images/fence material.png"
+                alt="Quality fencing materials selected for durability"
+                loading="lazy"
+              />
+
+              <div class="craft-principle-card__overlay"></div>
+
+              <span class="craft-principle-card__number"> 02 </span>
+
+              <div class="craft-principle-card__icon">
+                <i data-lucide="layers-3"></i>
               </div>
             </div>
-          </div>
 
-          <div class="craft-principle">
-            <span class="craft-principle__number">02</span>
+            <div class="craft-principle-card__content">
+              <span class="craft-principle-card__eyebrow">
+                Selected For Performance
+              </span>
 
-            <div class="craft-principle__line"></div>
+              <h3>Materials</h3>
 
-            <div class="craft-principle__bottom">
-              <i data-lucide="layers-3"></i>
+              <p>
+                Selected for durability, finish, performance, and the practical
+                demands of your property.
+              </p>
+            </div>
+          </article>
 
-              <div>
-                <h3>Materials</h3>
-                <p>Selected for durability, finish, and performance.</p>
+          <!-- =================================================
+           RIGHT CARD 03 — LONGEVITY
+           ================================================= -->
+
+          <article class="craft-principle-card">
+            <div class="craft-principle-card__image">
+              <img
+                src="images/Modern Privacy Fence.png"
+                alt="Detailed fence finishing and installation"
+                loading="lazy"
+              />
+
+              <div class="craft-principle-card__overlay"></div>
+
+              <span class="craft-principle-card__number"> 03 </span>
+
+              <div class="craft-principle-card__icon">
+                <i data-lucide="shield-check"></i>
               </div>
             </div>
-          </div>
 
-          <div class="craft-principle">
-            <span class="craft-principle__number">03</span>
+            <div class="craft-principle-card__content">
+              <span class="craft-principle-card__eyebrow">
+                Built For The Long Term
+              </span>
 
-            <div class="craft-principle__line"></div>
+              <h3>Longevity</h3>
 
-            <div class="craft-principle__bottom">
-              <i data-lucide="hammer"></i>
-
-              <div>
-                <h3>Craft</h3>
-                <p>Careful workmanship from installation to finish.</p>
-              </div>
+              <p>
+                Thoughtful construction and finishing built for dependable
+                everyday performance over time.
+              </p>
             </div>
-          </div>
-
-          <div class="craft-principle">
-            <span class="craft-principle__number">04</span>
-
-            <div class="craft-principle__line"></div>
-
-            <div class="craft-principle__bottom">
-              <i data-lucide="shield-check"></i>
-
-              <div>
-                <h3>Longevity</h3>
-                <p>Built for dependable everyday performance.</p>
-              </div>
-            </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
-
     <section class="featured-projects">
       <div class="featured-projects__container">
         <div class="featured-projects__header">
@@ -705,50 +777,46 @@
         </div>
       </div>
     </section>
-
     <section class="property-solutions">
       <div class="property-solutions__container">
-        <div class="property-solutions__intro">
-          <div class="section-tag">
-            <i data-lucide="building-2"></i>
-            <span>Built for Every Property</span>
-          </div>
+        <div class="property-solutions__header">
+          <div>
+            <div class="section-tag">
+              <i data-lucide="building-2"></i>
+              <span>Built for Every Property</span>
+            </div>
 
-          <h2 class="property-solutions__title">
-            The Right Fence for
-            <span>Every Space.</span>
-          </h2>
+            <h2 class="property-solutions__title">
+              The Right Fence for
+              <span>Every Space.</span>
+            </h2>
+          </div>
 
           <p class="property-solutions__description">
             Every property has different priorities. FenceForge combines the
             right material, layout, height, and finish to create fencing that
             works naturally with the way your space is used.
           </p>
-
-          <a href="contact.html#measurement" class="property-solutions__cta">
-            Discuss Your Project
-
-            <span>
-              <i data-lucide="arrow-up-right"></i>
-            </span>
-          </a>
-
-          <div class="property-solutions__note">
-            <i data-lucide="ruler"></i>
-
-            <div>
-              <strong>Not sure what you need?</strong>
-              <span>Start with a free property measurement.</span>
-            </div>
-          </div>
         </div>
 
-        <div class="property-solutions__list">
-          <a href="product.html" class="property-solution">
-            <span class="property-solution__number"> 01 </span>
+        <div class="property-solutions__grid">
+          <!-- Residential -->
 
-            <div class="property-solution__icon">
-              <i data-lucide="house"></i>
+          <a href="product.html" class="property-solution">
+            <div class="property-solution__image">
+              <img
+                src="images/security fence.png"
+                alt="Residential fencing"
+                loading="lazy"
+              />
+
+              <div class="property-solution__image-overlay"></div>
+
+              <span class="property-solution__number">01</span>
+
+              <div class="property-solution__icon">
+                <i data-lucide="house"></i>
+              </div>
             </div>
 
             <div class="property-solution__content">
@@ -762,18 +830,31 @@
                 Fencing designed to improve privacy, curb appeal, safety, and
                 everyday comfort around your home.
               </p>
-            </div>
 
-            <span class="property-solution__arrow">
-              <i data-lucide="arrow-up-right"></i>
-            </span>
+              <span class="property-solution__link">
+                Explore Residential
+                <i data-lucide="arrow-up-right"></i>
+              </span>
+            </div>
           </a>
 
-          <a href="product.html" class="property-solution">
-            <span class="property-solution__number"> 02 </span>
+          <!-- Commercial -->
 
-            <div class="property-solution__icon">
-              <i data-lucide="building-2"></i>
+          <a href="product.html" class="property-solution">
+            <div class="property-solution__image">
+              <img
+                src="images/wooden premium 1.png"
+                alt="Commercial fencing"
+                loading="lazy"
+              />
+
+              <div class="property-solution__image-overlay"></div>
+
+              <span class="property-solution__number">02</span>
+
+              <div class="property-solution__icon">
+                <i data-lucide="building-2"></i>
+              </div>
             </div>
 
             <div class="property-solution__content">
@@ -787,18 +868,31 @@
                 Durable fencing solutions created for commercial properties,
                 facilities, boundaries, and access areas.
               </p>
-            </div>
 
-            <span class="property-solution__arrow">
-              <i data-lucide="arrow-up-right"></i>
-            </span>
+              <span class="property-solution__link">
+                Explore Commercial
+                <i data-lucide="arrow-up-right"></i>
+              </span>
+            </div>
           </a>
 
-          <a href="product.html" class="property-solution">
-            <span class="property-solution__number"> 03 </span>
+          <!-- Privacy -->
 
-            <div class="property-solution__icon">
-              <i data-lucide="eye-off"></i>
+          <a href="product.html" class="property-solution">
+            <div class="property-solution__image">
+              <img
+                src="images/privacy fence.png"
+                alt="Privacy fencing around a residential property"
+                loading="lazy"
+              />
+
+              <div class="property-solution__image-overlay"></div>
+
+              <span class="property-solution__number">03</span>
+
+              <div class="property-solution__icon">
+                <i data-lucide="eye-off"></i>
+              </div>
             </div>
 
             <div class="property-solution__content">
@@ -812,18 +906,31 @@
                 Thoughtfully planned fencing that creates a more private and
                 comfortable outdoor environment.
               </p>
-            </div>
 
-            <span class="property-solution__arrow">
-              <i data-lucide="arrow-up-right"></i>
-            </span>
+              <span class="property-solution__link">
+                Explore Privacy
+                <i data-lucide="arrow-up-right"></i>
+              </span>
+            </div>
           </a>
 
-          <a href="product.html" class="property-solution">
-            <span class="property-solution__number"> 04 </span>
+          <!-- Security -->
 
-            <div class="property-solution__icon">
-              <i data-lucide="shield-check"></i>
+          <a href="product.html" class="property-solution">
+            <div class="property-solution__image">
+              <img
+                src="images/Security Gate.png"
+                alt="Secure perimeter fencing"
+                loading="lazy"
+              />
+
+              <div class="property-solution__image-overlay"></div>
+
+              <span class="property-solution__number">04</span>
+
+              <div class="property-solution__icon">
+                <i data-lucide="shield-check"></i>
+              </div>
             </div>
 
             <div class="property-solution__content">
@@ -837,16 +944,35 @@
                 Strong perimeter solutions designed around controlled access,
                 visibility, durability, and protection.
               </p>
-            </div>
 
-            <span class="property-solution__arrow">
+              <span class="property-solution__link">
+                Explore Security
+                <i data-lucide="arrow-up-right"></i>
+              </span>
+            </div>
+          </a>
+        </div>
+
+        <div class="property-solutions__bottom">
+          <div class="property-solutions__note">
+            <i data-lucide="ruler"></i>
+
+            <div>
+              <strong>Not sure what you need?</strong>
+              <span>Start with a free property measurement.</span>
+            </div>
+          </div>
+
+          <a href="contact.html#measurement" class="property-solutions__cta">
+            Discuss Your Project
+
+            <span>
               <i data-lucide="arrow-up-right"></i>
             </span>
           </a>
         </div>
       </div>
     </section>
-
     <section class="client-stories">
       <div class="client-stories__container">
         <div class="client-stories__header">
