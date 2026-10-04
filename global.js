@@ -84,99 +84,58 @@ document.addEventListener("DOMContentLoaded", () => {
 
     updateIcons();
   }
+function setActiveNavLink() {
+  const currentPage =
+    window.location.pathname.split("/").filter(Boolean).pop()?.toLowerCase() ||
+    "index.html";
 
-  function setActiveNavLink() {
-    let currentPage = window.location.pathname.split("/").pop().toLowerCase();
+  const navLinks = document.querySelectorAll(".nav-link");
+  const dropdownItems = document.querySelectorAll(".dropdown-menu a");
+  const homeLink = document.getElementById("homeDropdownToggle");
 
-    if (!currentPage) {
-      currentPage = "index.html";
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+  });
+
+  dropdownItems.forEach((link) => {
+    link.classList.remove("active");
+  });
+
+  if (currentPage === "index.html" || currentPage === "index2.html") {
+    if (homeLink) {
+      homeLink.classList.add("active");
     }
-
-    const navLinks = document.querySelectorAll(".nav-link");
-    const dropdownItems = document.querySelectorAll(".dropdown-menu a");
-    const homeLink = document.getElementById("homeDropdownToggle");
-
-    navLinks.forEach((link) => {
-      link.classList.remove("active");
-    });
 
     dropdownItems.forEach((link) => {
-      link.classList.remove("active");
-    });
-
-    const pageGroups = {
-      home: ["index.html", "index2.html"],
-      about: ["about.html"],
-      products: ["product.html", "productdetails.html"],
-      gallery: ["gallery.html"],
-      pricing: ["fabric.html"],
-      contact: ["contact.html"],
-    };
-
-    if (pageGroups.home.includes(currentPage)) {
-      if (homeLink) {
-        homeLink.classList.add("active");
-      }
-
-      dropdownItems.forEach((link) => {
-        const href = link.getAttribute("href");
-
-        if (!href) {
-          return;
-        }
-
-        const linkPage = href.split("#")[0].split("/").pop().toLowerCase();
-
-        if (linkPage === currentPage) {
-          link.classList.add("active");
-        }
-      });
-
-      return;
-    }
-
-    navLinks.forEach((link) => {
       const href = link.getAttribute("href");
 
-      if (!href) {
-        return;
-      }
+      if (!href) return;
 
-      const linkPage = href.split("#")[0].split("/").pop().toLowerCase();
+      const linkPage =
+        href.split("#")[0].split("/").filter(Boolean).pop()?.toLowerCase() ||
+        "";
 
-      if (pageGroups.about.includes(currentPage) && linkPage === "about.html") {
-        link.classList.add("active");
-      }
-
-      if (
-        pageGroups.products.includes(currentPage) &&
-        linkPage === "product.html"
-      ) {
-        link.classList.add("active");
-      }
-
-      if (
-        pageGroups.gallery.includes(currentPage) &&
-        linkPage === "gallery.html"
-      ) {
-        link.classList.add("active");
-      }
-
-      if (
-        pageGroups.pricing.includes(currentPage) &&
-        linkPage === "fabric.html"
-      ) {
-        link.classList.add("active");
-      }
-
-      if (
-        pageGroups.contact.includes(currentPage) &&
-        linkPage === "contact.html"
-      ) {
+      if (linkPage === currentPage) {
         link.classList.add("active");
       }
     });
+
+    return;
   }
+
+  navLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+
+    if (!href) return;
+
+    const linkPage =
+      href.split("#")[0].split("/").filter(Boolean).pop()?.toLowerCase() || "";
+
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
+}
 
   if (darkToggle) {
     darkToggle.addEventListener("click", (event) => {
